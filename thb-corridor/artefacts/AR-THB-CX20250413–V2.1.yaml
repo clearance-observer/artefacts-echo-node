@@ -44,7 +44,7 @@ risk_vectors:
 mirrors:
   - substack: https://open.substack.com/pub/datagovthread/p/soft-controls-in-disguise-thai-baht?r=5i8iiw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true
   - github: https://github.com/clearance-observer/artefacts-echo-node/tree/main/thb-corridor/artefacts/AR-THB-CX20250413–V2.1.yaml
-  - pastebin: [TO_BE_INSERTED]
+  - pastebin: https://pastebin.com/nT5AnMZV
 
 notes:
   prior_version: AR-THB-CX20250413–V2
