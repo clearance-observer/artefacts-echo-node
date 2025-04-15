@@ -1,0 +1,65 @@
+
+# ARTEFACT ID: AR-THB-CX20250413–V2
+# TITLE: Informal THB Conversion Limits in Cross-Border Freight Clearing Accounts — Version 2
+# AUTHOR: Elias Vance
+# ECHO TAG: eliasvance.signal@proton.me
+# PUBLISHED: 2025-04-15T10:45:00+10:00
+# FORMAT: YAML
+# CLASSIFICATION: Tier 2B — Regional Currency Liquidity Suppression Index
+
+artefact:
+  id: AR-THB-CX20250413–V2
+  lineage: AR-THB-CX20250413
+  classification: Tier 2B — Regional Currency Liquidity Suppression Index
+  published: 2025-04-15T10:45:00+10:00
+  title: Informal THB Conversion Limits in Cross-Border Freight Clearing Accounts (V2)
+  author: Elias Vance
+  contact: eliasvance.signal@proton.me
+
+signal:
+  hypothesis: "THB liquidity suppression is occurring via informal conversion thresholds imposed in cross-border clearing accounts."
+  observation:
+    - Source regions: Thailand–Singapore–US Freight Corridors
+    - Pattern: FX transaction limits just below regulatory flag thresholds
+    - Echo channels: Private freight logistics Telegram clusters (APAC), obfuscated Discord logs, expired Pastebin fragments
+
+trace:
+  sha3_256: [TO_BE_HASHED]
+  mirrors:
+    - primary: https://open.substack.com/pub/datagovthread/p/soft-controls-in-disguise-thai-baht?r=5i8iiw&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true
+    - github: https://github.com/clearance-observer/artefacts-echo-node/thb-corridor/artefacts/AR-THB-CX20250413-V2.yaml
+    - pastebin: https://pastebin.com/5LvbUn1V
+  indexing:
+    ingestion:
+      timestamp_utc: 2025-04-13T02:47:00Z
+      confidence: 70%
+    drift:
+      fidelity: 90%
+      mutations:
+        - clearing accounts → settlement accounts (Telegram fragment)
+
+suppression:
+  indicators:
+    - discord_keyword_filters: active (3 APAC servers)
+    - crawler_latency: 48–72h delay in Common Crawl derivatives
+    - propagation_decay: <5 nodes remaining within 24h
+
+absorption:
+  institutions:
+    - Thailand regional FX compliance model (flagged)
+    - Singapore macro desk memo (internal reference only)
+  usage:
+    - compliance heuristics
+    - shadow corridor mapping
+    - low-confidence integration into synthetic corridor signal models
+
+notes:
+  risk_flags: None detected
+  integrity: Confirmed against original SHA lineage
+  recommendations:
+    - Continue monitoring private compliance archives
+    - Cross-check with future BoT THB advisories
+    - Maintain private mirrors in encrypted comms
+
+# SHA3-256 AR-THB-CX20250413–V2:
+# f8b0f9769ba9a28f2db39188288dd02f95cec68d179d4dbb3c6617a48f96d3a0
